@@ -1,0 +1,90 @@
+/* Estilos para el contenedor principal */
+.animes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Estilos para cada tarjeta de anime */
+.producto {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.producto_img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0px 0;
+  text-align: left;
+}
+
+.categoria {
+  font-size: 1rem;
+  color: #888;
+}
+
+.descripcion {
+  font-size: 1rem;
+  margin-top: 10px;
+  overflow: hidden;
+  max-width: 30ch;
+  /* Ajusta este valor según tus necesidades */
+  text-overflow: ellipsis;
+}
+
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.estado {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.producto_img img {
+  width: 100%;
+  /* Establece el ancho al 100% del contenedor */
+  height: auto;
+  /* Autoajusta la altura para mantener la proporción */
+  max-height: 200px;
+  /* Puedes ajustar esto según tu diseño */
+  object-fit: cover;
+  /* Para asegurarse de que la imagen se ajuste y recorte según sea necesario */
+}
